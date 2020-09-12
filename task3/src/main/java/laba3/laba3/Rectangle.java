@@ -6,6 +6,7 @@ public class Rectangle extends Shape {
 	private double length;
 
 	public Rectangle() {
+
 	}
 
 	public Rectangle(final double width, final double length) {
@@ -36,11 +37,11 @@ public class Rectangle extends Shape {
 	}
 
 	public double getArea() {
-		return super.getArea();
+		return (width * length) / 2;
 	}
 
 	public double getPerimeter() {
-		return super.getPerimeter();
+		return 2 * (width + length);
 	}
 
 	public String toString() {

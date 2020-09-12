@@ -12,12 +12,14 @@ public class start {
 		System.out.println(s1.getPerimeter());
 		System.out.println(s1.getColor());
 		System.out.println(s1.isFilled());
+
 		// Мы создали новый класс Shape на основе на Circle, у них действуют только
 		// общие методы
 		// для того, чтобы раборотал метод getRadius нам нужно создавать
 		// не Shape s1 а Circle s1
 		//
 		// System.out.println(s1.getRadius());
+
 		System.out.println("______________________");
 
 		Circle c1 = (Circle) s1;
@@ -33,10 +35,12 @@ public class start {
 		System.out.println(s3);
 		System.out.println(s3.getArea());
 		System.out.println(s3.getPerimeter());
+
 		// System.out.println(s3.getColor());
 		// System.out.println(s3.getLength());
 		// Мы создали класс Shape на основе Rectangle. Нам нужно создавать объект на
 		// основе не Shape, а Rectangle.
+
 		Rectangle r1 = (Rectangle) s3; // downcast
 		System.out.println(r1);
 		System.out.println(r1.getArea());
@@ -48,18 +52,23 @@ public class start {
 		System.out.println(s4);
 		System.out.println(s4.getArea());
 		System.out.println(s4.getColor());
+
 		// System.out.println(s4.getSide());
 		// У объекта s4 нет метода getSide, так как он shape, а не square
+
 		System.out.println("______________________");
 
 		// Take note that we downcast Shape s4 to Rectangle,
 		// which is a superclass of Square, instead of Square
+
 		Rectangle r2 = (Rectangle) s4;
 		System.out.println(r2);
 		System.out.println(r2.getArea());
 		System.out.println(r2.getColor());
+
 		// у метода Rectangle нет функции getSide()
 		// System.out.println(r2.getSide());
+		
 		System.out.println("______________________");
 		System.out.println(r2.getLength());
 
