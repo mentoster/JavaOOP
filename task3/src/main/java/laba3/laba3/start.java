@@ -61,9 +61,9 @@ public class start {
 		// у метода Rectangle нет функции getSide()
 		// System.out.println(r2.getSide());
 		System.out.println("______________________");
+		System.out.println(r2.getLength());
 
-		// System.out.println(r2.getLength());
-		// // Невозможно преобразовать Square в Square
+		// Невозможно преобразовать Square в Square
 		// Square sq1 = (Square) r2;
 		//
 		// System.out.println(sq1);
