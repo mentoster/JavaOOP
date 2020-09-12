@@ -35,8 +35,8 @@ public class start {
 		System.out.println(s3);
 		System.out.println(s3.getArea());
 		System.out.println(s3.getPerimeter());
+		System.out.println(s3.getColor());
 
-		// System.out.println(s3.getColor());
 		// System.out.println(s3.getLength());
 		// Мы создали класс Shape на основе Rectangle. Нам нужно создавать объект на
 		// основе не Shape, а Rectangle.
@@ -68,13 +68,13 @@ public class start {
 
 		// у метода Rectangle нет функции getSide()
 		// System.out.println(r2.getSide());
-		
+
 		System.out.println("______________________");
 		System.out.println(r2.getLength());
 
 		// Невозможно преобразовать Square в Square
 		// Square sq1 = (Square) r2;
-		//
+
 		// System.out.println(sq1);
 		// System.out.println(sq1.getArea());
 		// System.out.println(sq1.getColor());
