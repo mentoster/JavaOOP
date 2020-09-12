@@ -29,7 +29,7 @@ public class start {
 		System.out.println(s3.getPerimeter());
 		// System.out.println(s3.getColor());
 		// System.out.println(s3.getLength());
-		// Мы создали класс Shape на основеRectangle. Нам нужно создавать объект на
+		// Мы создали класс Shape на основе Rectangle. Нам нужно создавать объект на
 		// основе не Shape, а Rectangle.
 		Rectangle r1 = (Rectangle) s3; // downcast
 		System.out.println(r1);
@@ -42,14 +42,17 @@ public class start {
 		System.out.println(s4.getArea());
 		System.out.println(s4.getColor());
 		// System.out.println(s4.getSide());
+		// У объекта s4 нет метода getSide
+		//
 
 		// Take note that we downcast Shape s4 to Rectangle,
 		// which is a superclass of Square, instead of Square
+		// TODO: make comments (Rectangle) s4;
 		Rectangle r2 = (Rectangle) s4;
 		System.out.println(r2);
 		System.out.println(r2.getArea());
 		System.out.println(r2.getColor());
-		// System.out.println(r2.getSide());
+		System.out.println(r2.getSide());
 		System.out.println(r2.getLength());
 
 		// Downcast Rectangle r2 to Square
