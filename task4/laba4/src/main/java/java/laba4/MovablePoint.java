@@ -1,7 +1,7 @@
 package java.laba4;
 
 public class MovablePoint implements Movable {
-
+	
 	private int x;
 	private int y;
 	private int xSpeed;

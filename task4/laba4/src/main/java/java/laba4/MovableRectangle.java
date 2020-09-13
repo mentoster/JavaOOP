@@ -35,8 +35,6 @@ public class MovableRectangle implements Movable {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-
-		return String.format("Квадрат определяемый точками: (" + point1 + ", " + point2 + ")");
+		return String.format("Квадрат определяемый точками: (" + topleft + ", " + bottomRight + ")");
 	}
 }
