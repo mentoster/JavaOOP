@@ -1,4 +1,4 @@
-package java.laba4;
+package laba4.laba4;
 
 public interface Movable {
 	public void moveUP();

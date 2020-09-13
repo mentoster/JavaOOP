@@ -1,4 +1,4 @@
-package java.laba4;
+package laba4.laba4;
 
 public class MovableCircle implements Movable {
 	int radius;
