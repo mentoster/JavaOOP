@@ -16,18 +16,17 @@ public class upr1 extends JFrame {
 	private final JLabel WinnerLabel = new JLabel("Winner: DRAW");
 	private int milanScore = 0;
 	private int madridScore = 0;
-	private int ButtonWidth = 200;
-	private int ButtonHeights = 30;
-	private int TextHeight = 10;
+	private final int ButtonWidth = 200;
+	private final int ButtonHeights = 30;
+	private final int TextHeight = 10;
 
 	private void changeWinner() {
-		if (milanScore > madridScore) {
+		if (milanScore > madridScore)
 			WinnerLabel.setText("Winner: Милан");
-		} else if (milanScore == madridScore)
+		else if (milanScore == madridScore)
 			WinnerLabel.setText("Winner: Ничья");
-		else {
+		else
 			WinnerLabel.setText("Winner: Мадрид");
-		}
 	}
 
 	upr1() {
@@ -65,7 +64,6 @@ public class upr1 extends JFrame {
 				changeWinner();
 			}
 		});
-
 		setVisible(true);
 	}
 
