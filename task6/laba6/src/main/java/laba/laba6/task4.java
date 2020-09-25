@@ -1,17 +1,7 @@
 package laba.laba6;
 
-import java.lang.Math;
 
-/*
-'##::::::::
- ##:::'##::
- ##::: ##::
- ##::: ##::
- #########:
-...... ##::
-:::::: ##::
-::::::..:::
-*/
+
 // 4. Заданная сумма цифр
 // Даны натуральные числа k и s.Определите,
 // сколько существует k-значных натуральных чисел,сумма цифр которых
@@ -20,43 +10,35 @@ import java.lang.Math;
 // на какой-либо позиции
 public class task4 {
 
-	private  int k;
-	private  int d;
-	private double result;
+	private int k;
+	private int s;
 
-	public task4(final int k, final int d) {
-		this.k = k;
-		this.d = d;
-	}
-
-	private void count() {
-		double i = Math.pow(10, k - 1);
-		while (i < Math.pow(10, k)) {
-			double ssum = 0, num = i;
-			while (num > 0) {
-				ssum += num % 10;
-				num /= 10;
-			}
-			if (ssum == d) {
-				result++;
-			}
-			i++;
+	public task4(int k, int s) {
+		this.s = s;
+		if (k == 0) {
+			System.out.print("k не может равняться нулю, ваше k сброшена до 1");
+			k = 1;
 		}
+		this.k = k;
 	}
 
-	public int getK() {
-		return this.k;
+	private int count(int len, int sum) {
+		if (len == k)
+			if (sum == s)
+				return 1;
+			else
+				return 0;
+		int c = (len == 0 ? 1 : 0);
+		int result = 0;
+		for (int i = c; i < 10; i++)
+			result += count(len + 1, sum + i);
+		return result;
 	}
-
-	public int getD() {
-		return this.d;
-	}
-
 
 
 	@Override
 	public String toString() {
-		count();
-		return "Существует " + result + " значений(ия)\n";
+		int answer = count(0, 0);
+		return "Существует " + answer + " значений(ия)\n";
 	}
 }
